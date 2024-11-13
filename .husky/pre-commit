@@ -1,0 +1,1 @@
+npm test && vendor/bin/pest && vendor/bin/pint && npx lint-staged && git add -A .
