@@ -9,10 +9,7 @@ export default {
     ],
     theme: {
         fontFamily: {
-            sans: [
-                //
-                ...defaultTheme.fontFamily.sans,
-            ],
+            sans: ['"Geist"', ...defaultTheme.fontFamily.sans],
             mono: [
                 //
                 ...defaultTheme.fontFamily.mono,

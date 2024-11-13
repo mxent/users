@@ -9,17 +9,19 @@ export default function ThemeSwitcher({ ...props }) {
         <div className="inline-flex items-center">
             <Button
                 variant="hovy"
-                className={`${props.className} hidden h-[48px] w-[48px] rounded-full p-3 dark:inline-block`}
+                size="round"
+                className={`${props.className} hidden dark:inline-block`}
                 onClick={() => setTheme('light')}
             >
-                <Sun />
+                <Sun className="h-5 w-5" />
             </Button>
             <Button
                 variant="hovy"
-                className={`${props.className} inline-block h-[48px] w-[48px] rounded-full p-3 dark:hidden`}
+                size="round"
+                className={`${props.className} inline-block dark:hidden`}
                 onClick={() => setTheme('dark')}
             >
-                <Moon />
+                <Moon className="h-5 w-5" />
             </Button>
         </div>
     );
